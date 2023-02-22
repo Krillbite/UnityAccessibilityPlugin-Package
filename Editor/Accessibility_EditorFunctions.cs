@@ -10,7 +10,7 @@ using UnityEngine.Networking;
 [InitializeOnLoad]
 public class Accessibility_EditorFunctions
 {
-	static public string PluginFolder = "Assets/UAP";
+	static public string PluginFolder = "Packages/com.mikrima.unityaccessibilityplugin";
 
 	static Texture2D AccessibilityIcon = null;
 	static string versionURL = "http://www.metalpopgames.com/assetstore/accessibility/UAP_Version.txt";
