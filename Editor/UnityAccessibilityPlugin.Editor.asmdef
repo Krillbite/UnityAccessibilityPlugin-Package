@@ -1,0 +1,17 @@
+{
+    "name": "UnityAccessibilityPlugin.Editor",
+    "references": [
+        "GUID:842c5c5c1530e374ca3331a7f5575f93"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
