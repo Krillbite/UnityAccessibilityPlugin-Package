@@ -1889,7 +1889,8 @@ public class UAP_AccessibilityManager : MonoBehaviour
 
 		if (m_ActiveContainers.Count == 0)
 		{
-			Log("Nothing on screen to select");
+			// KRILLEDIT: Commented out due to spam.
+			// Log("Nothing on screen to select");
 			m_ActiveContainerIndex = -1;
 			if (isEnabled)
 			{
@@ -1915,7 +1916,8 @@ public class UAP_AccessibilityManager : MonoBehaviour
 				m_CurrentItem = null;
 			if (m_CurrentItem == null)
 			{
-				Log("Nothing selected");
+				// KRILL EDIT: Commented out because it was spammy. 
+				// Log("Nothing selected");
 				if (makeSureItemIsSelected)
 				{
 					DecrementUIElement();
