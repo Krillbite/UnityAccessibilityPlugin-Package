@@ -4548,7 +4548,7 @@ public class UAP_AccessibilityManager : MonoBehaviour
 		if (!instance.m_ActiveContainers.Contains(container))
 		{
 			if(instance.m_DebugOutput && m_IsEnabled)
-				Debug.LogWarning("[Accessibility] Trying to select an item in a container that is inactive. Ignoring call.");
+				Debug.LogWarning($"[Accessibility] Trying to select an item in a container that is inactive. Ignoring call. ({container.name})");
 			return false;
 		}
 
