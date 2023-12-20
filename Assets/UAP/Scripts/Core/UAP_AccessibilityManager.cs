@@ -343,6 +343,7 @@ public class UAP_AccessibilityManager : MonoBehaviour
 	{
 		Initialize();
 		DontDestroyOnLoad(gameObject);
+		SceneManager.sceneLoaded -= OnSceneLoaded;
 		SceneManager.sceneLoaded += OnSceneLoaded;
 	}
 
@@ -352,15 +353,17 @@ public class UAP_AccessibilityManager : MonoBehaviour
 	{
 		if (instance == this)
 			isDestroyed = true;
+		SceneManager.sceneLoaded -= OnSceneLoaded;
 	}
 
 	//////////////////////////////////////////////////////////////////////////
 
 	static void Initialize()
 	{
-		if (m_IsInitialized)
+		if (m_IsInitialized && !isDestroyed)
 			return;
 		m_IsInitialized = true;
+		isDestroyed = false;
 
 		if (instance == null)
 		{
